@@ -133,11 +133,6 @@ describe "Blog Post App" do
       expect(find("#hidden", :visible => false).value).to eq("delete")
     end
 
-  end
-
-
-
-
-
+   end
 
 end
