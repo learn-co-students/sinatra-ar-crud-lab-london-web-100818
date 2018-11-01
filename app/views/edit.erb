@@ -11,8 +11,8 @@
 
     <h1>Update this post</h1>
     <h1> <%= @post.name %></h1>
-    <h1> <%= @post.content %></h1>
-    <form action="/posts/:id" method="post">
+    <p> <%= @post.content %><p>
+    <form action="/posts/<%=@post_id%>" method="post">
         <input id="hidden" type="hidden" name="_method" value="patch">
         <p>Name:</p><input type="text" name='name'>
         <p>Content:</p><input type="text" name="content">
