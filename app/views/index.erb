@@ -1,0 +1,11 @@
+<h1>My Blog</h1>
+
+<h2>Entries</h2>
+
+<%@posts.each do |post|%>
+
+<a href="/posts/<%=post.id%>"><%=post.name%></a>
+<p><%=post.content%></p>
+<%end%>
+
+<a href="/posts/new"><New post></a>
