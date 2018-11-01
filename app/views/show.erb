@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inded</title>
+</head>
+<body>
+
+    <h1>This is the show page</h1>
+    <br>
+    <h2><%= @post.name %></h2>
+    <br>
+    <p><%= @post.content %></p>
+    
+
+    <form action="/posts/<%=@post.id%>/delete" method="post">
+        <input id="hidden" type="hidden" name="_method" value="delete">
+        <input type="submit" value="delete" id="delete">
+
+    </form>
+</body>
+</html>
